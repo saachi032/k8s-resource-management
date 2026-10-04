@@ -1,0 +1,124 @@
+Name:               minikube
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=arm64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=arm64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=7a9f6a841470a207de8cf4bafcccee0969d8ba10
+                    minikube.k8s.io/name=minikube
+                    minikube.k8s.io/primary=true
+                    minikube.k8s.io/updated_at=2026_10_04T15_34_23_0700
+                    minikube.k8s.io/version=v1.39.0
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sun, 04 Oct 2026 15:34:19 +0530
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Sun, 04 Oct 2026 15:49:10 +0530
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Sun, 04 Oct 2026 15:44:54 +0530   Sun, 04 Oct 2026 15:34:17 +0530   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Sun, 04 Oct 2026 15:44:54 +0530   Sun, 04 Oct 2026 15:34:17 +0530   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Sun, 04 Oct 2026 15:44:54 +0530   Sun, 04 Oct 2026 15:34:17 +0530   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Sun, 04 Oct 2026 15:44:54 +0530   Sun, 04 Oct 2026 15:34:47 +0530   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.49.2
+  Hostname:    minikube
+Capacity:
+  cpu:                4
+  ephemeral-storage:  245405159424
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  hugepages-32Mi:     0
+  hugepages-64Ki:     0
+  memory:             4010880Ki
+  pods:               110
+Allocatable:
+  cpu:                4
+  ephemeral-storage:  245405159424
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  hugepages-32Mi:     0
+  hugepages-64Ki:     0
+  memory:             4010880Ki
+  pods:               110
+System Info:
+  Machine ID:                 c7552358bf1aab9f1f21b3de6a971616
+  System UUID:                c7552358bf1aab9f1f21b3de6a971616
+  Boot ID:                    32246e29-7675-4be6-8e57-db96110025ad
+  Kernel Version:             7.0.14-linuxkit
+  OS Image:                   Debian GNU/Linux 12 (bookworm)
+  Operating System:           linux
+  Architecture:               arm64
+  Container Runtime Version:  containerd://2.3.4
+  Kubelet Version:            v1.37.0
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+Non-terminated Pods:          (39 in total)
+  Namespace                   Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-559f6c778d-82qq9            100m (2%)     0 (0%)      70Mi (1%)        170Mi (4%)     14m
+  kube-system                 etcd-minikube                       100m (2%)     0 (0%)      100Mi (2%)       0 (0%)         14m
+  kube-system                 kindnet-xrhkz                       100m (2%)     100m (2%)   50Mi (1%)        50Mi (1%)      14m
+  kube-system                 kube-apiserver-minikube             250m (6%)     0 (0%)      0 (0%)           0 (0%)         14m
+  kube-system                 kube-controller-manager-minikube    200m (5%)     0 (0%)      0 (0%)           0 (0%)         14m
+  kube-system                 kube-proxy-7nffv                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         14m
+  kube-system                 kube-scheduler-minikube             100m (2%)     0 (0%)      0 (0%)           0 (0%)         14m
+  kube-system                 metrics-server-768f9f6999-mnmhr     100m (2%)     0 (0%)      200Mi (5%)       0 (0%)         13m
+  kube-system                 storage-provisioner                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         14m
+  resource-demo               web-no-limits-557bd8d758-26j69      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-2krl9      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-485wg      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-4gqk8      0 (0%)        0 (0%)      0 (0%)           0 (0%)         5m2s
+  resource-demo               web-no-limits-557bd8d758-5662k      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-b46rp      0 (0%)        0 (0%)      0 (0%)           0 (0%)         5m2s
+  resource-demo               web-no-limits-557bd8d758-b52f4      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-c5pcj      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-dphp8      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-f2v7h      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-fb5jd      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-gr4kx      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-l7nsd      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-n4c9t      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-pmj8x      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-qnzpv      0 (0%)        0 (0%)      0 (0%)           0 (0%)         5m2s
+  resource-demo               web-no-limits-557bd8d758-qsvt9      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-r2s82      0 (0%)        0 (0%)      0 (0%)           0 (0%)         5m2s
+  resource-demo               web-no-limits-557bd8d758-rq2hz      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-rwzhc      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-sgdht      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-sxsf7      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-trwsl      0 (0%)        0 (0%)      0 (0%)           0 (0%)         5m2s
+  resource-demo               web-no-limits-557bd8d758-v9bvs      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-v9zrd      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-zb42j      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-zck4d      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-znvxx      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-zrnld      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+  resource-demo               web-no-limits-557bd8d758-ztb62      0 (0%)        0 (0%)      0 (0%)           0 (0%)         68s
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                950m (23%)   100m (2%)
+  memory             420Mi (10%)  220Mi (5%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+  hugepages-32Mi     0 (0%)       0 (0%)
+  hugepages-64Ki     0 (0%)       0 (0%)
+Events:
+  Type    Reason                   Age   From             Message
+  ----    ------                   ----  ----             -------
+  Normal  NodeHasSufficientMemory  14m   kubelet          Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    14m   kubelet          Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     14m   kubelet          Node minikube status is now: NodeHasSufficientPID
+  Normal  RegisteredNode           14m   node-controller  Node minikube event: Registered Node minikube in Controller
+  Normal  NodeReady                14m   kubelet          Node minikube status is now: NodeReady

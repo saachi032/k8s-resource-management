@@ -1,0 +1,109 @@
+Name:               minikube
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=arm64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=arm64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=7a9f6a841470a207de8cf4bafcccee0969d8ba10
+                    minikube.k8s.io/name=minikube
+                    minikube.k8s.io/primary=true
+                    minikube.k8s.io/updated_at=2026_10_04T15_34_23_0700
+                    minikube.k8s.io/version=v1.39.0
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sun, 04 Oct 2026 15:34:19 +0530
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Sun, 04 Oct 2026 15:52:14 +0530
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Sun, 04 Oct 2026 15:50:52 +0530   Sun, 04 Oct 2026 15:34:17 +0530   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Sun, 04 Oct 2026 15:50:52 +0530   Sun, 04 Oct 2026 15:34:17 +0530   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Sun, 04 Oct 2026 15:50:52 +0530   Sun, 04 Oct 2026 15:34:17 +0530   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Sun, 04 Oct 2026 15:50:52 +0530   Sun, 04 Oct 2026 15:34:47 +0530   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.49.2
+  Hostname:    minikube
+Capacity:
+  cpu:                4
+  ephemeral-storage:  245405159424
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  hugepages-32Mi:     0
+  hugepages-64Ki:     0
+  memory:             4010880Ki
+  pods:               110
+Allocatable:
+  cpu:                4
+  ephemeral-storage:  245405159424
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  hugepages-32Mi:     0
+  hugepages-64Ki:     0
+  memory:             4010880Ki
+  pods:               110
+System Info:
+  Machine ID:                 c7552358bf1aab9f1f21b3de6a971616
+  System UUID:                c7552358bf1aab9f1f21b3de6a971616
+  Boot ID:                    32246e29-7675-4be6-8e57-db96110025ad
+  Kernel Version:             7.0.14-linuxkit
+  OS Image:                   Debian GNU/Linux 12 (bookworm)
+  Operating System:           linux
+  Architecture:               arm64
+  Container Runtime Version:  containerd://2.3.4
+  Kubelet Version:            v1.37.0
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+Non-terminated Pods:          (24 in total)
+  Namespace                   Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-559f6c778d-82qq9            100m (2%)     0 (0%)      70Mi (1%)        170Mi (4%)     17m
+  kube-system                 etcd-minikube                       100m (2%)     0 (0%)      100Mi (2%)       0 (0%)         18m
+  kube-system                 kindnet-xrhkz                       100m (2%)     100m (2%)   50Mi (1%)        50Mi (1%)      17m
+  kube-system                 kube-apiserver-minikube             250m (6%)     0 (0%)      0 (0%)           0 (0%)         18m
+  kube-system                 kube-controller-manager-minikube    200m (5%)     0 (0%)      0 (0%)           0 (0%)         18m
+  kube-system                 kube-proxy-7nffv                    0 (0%)        0 (0%)      0 (0%)           0 (0%)         17m
+  kube-system                 kube-scheduler-minikube             100m (2%)     0 (0%)      0 (0%)           0 (0%)         18m
+  kube-system                 metrics-server-768f9f6999-mnmhr     100m (2%)     0 (0%)      200Mi (5%)       0 (0%)         16m
+  kube-system                 storage-provisioner                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         17m
+  resource-demo               web-with-limits-67c554d58b-2cc28    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-4qhzp    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-6n2m4    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-9djzb    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-9ln7r    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-bq5p9    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-c7rvh    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     2m10s
+  resource-demo               web-with-limits-67c554d58b-dl8kx    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-fxpvv    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-g8zxt    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-hkkbj    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     2m10s
+  resource-demo               web-with-limits-67c554d58b-mhzd2    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-mjz6l    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+  resource-demo               web-with-limits-67c554d58b-rd8jm    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     2m10s
+  resource-demo               web-with-limits-67c554d58b-rzmhf    200m (5%)     500m (12%)  64Mi (1%)        128Mi (3%)     84s
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests      Limits
+  --------           --------      ------
+  cpu                3950m (98%)   7600m (190%)
+  memory             1380Mi (35%)  2140Mi (54%)
+  ephemeral-storage  0 (0%)        0 (0%)
+  hugepages-1Gi      0 (0%)        0 (0%)
+  hugepages-2Mi      0 (0%)        0 (0%)
+  hugepages-32Mi     0 (0%)        0 (0%)
+  hugepages-64Ki     0 (0%)        0 (0%)
+Events:
+  Type    Reason                   Age   From             Message
+  ----    ------                   ----  ----             -------
+  Normal  NodeHasSufficientMemory  18m   kubelet          Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    18m   kubelet          Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     18m   kubelet          Node minikube status is now: NodeHasSufficientPID
+  Normal  RegisteredNode           17m   node-controller  Node minikube event: Registered Node minikube in Controller
+  Normal  NodeReady                17m   kubelet          Node minikube status is now: NodeReady
